@@ -1,19 +1,18 @@
-# For Ari ♡
+# For Ari ♡ — Zürich dinner date
 
-A little Zürich restaurant picker, based on the Yuki date-page layout.
+A static GitHub Pages site with four restaurants, illustrations, an open-ended date picker, dinner time choices, and a copyable message for PJ.
 
-## Publish with GitHub Pages
+## Publish
+Upload the **contents** of this folder (`index.html`, `style.css`, `script.js`, `images/`) to the root of a GitHub repository. Go to Settings → Pages → Deploy from a branch → main → /(root).
 
-1. Create a public GitHub repository (e.g. `for-ari`).
-2. Upload `index.html`, `style.css`, `script.js` to the repository root.
-3. In **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **/(root)**, then Save.
-4. Visit `https://YOUR-USERNAME.github.io/for-ari/` after deployment.
+## Restaurant hours
+The date picker uses regular dinner days checked 19 November 2026:
+- DAR: Wednesday–Sunday (closed Monday and Tuesday).
+- Haus Hiltl: every day.
+- Neue Taverne: Monday–Saturday (normally closed Sunday; special Sundays may occur).
+- Enja: Monday–Saturday (closed Sunday).
 
-## Customize
+These are **regular opening days, not confirmed reservation availability**. Holiday exceptions can apply. To change them, edit `openDays` in `script.js`.
 
-- In `script.js`, edit `dateOptions` and `timeOptions` before sharing the link.
-- In `index.html`, edit restaurant descriptions and menu links if needed.
-- The gradient restaurant images are deliberately decorative placeholders, **not actual restaurant photographs**. To add your own licensed photos, replace each `<div class="restaurant-photo ...">...</div>` with an `<img class="restaurant-photo" src="images/dar.jpg" alt="DAR restaurant interior" loading="lazy">` and add `object-fit:cover;width:100%` to `.restaurant-photo` in `style.css`.
-- Prices are planning guidance, not guaranteed current menu prices. Check menus, vegetarian options, and availability before booking.
-
-No framework, backend, or dependencies required. The Copy button copies Ari's selection; it does not send a message or reserve a table.
+## Images
+`images/*.svg` are **original decorative illustrations, not actual photos** of the restaurants. You may replace them with properly licensed photos and update the paths in `index.html`.
